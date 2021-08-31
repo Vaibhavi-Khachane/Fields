@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Text from './Text';
 import reportWebVitals from './reportWebVitals';
-
+import MultiText from './MultiText';
+import Number from './Number'
+import Checkbox from './Checkbox';
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <Text />
+    <MultiText/>
+    <Number/>
+    <Checkbox/>
+  </div>,
+ 
   document.getElementById('root')
 );
 
