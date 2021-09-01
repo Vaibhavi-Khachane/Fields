@@ -1,10 +1,11 @@
 .lbl{
-    margin-left: 10px;
-    font-size:medium;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    /* margin-left: 5em; */
-    /* color: #db0bd1; */
-    font-weight: 400;
-    /* padding: 4em; */
+    margin-left: -20em;
 }
-
+.check{
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+}
+.lbln{
+    font-size: 1.3em;
+}

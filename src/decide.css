@@ -1,0 +1,20 @@
+.inside{
+    display: flex;
+    align-self: center;
+    /* border:solid green; */
+    justify-content: center;
+    justify-content: space-around;
+}
+.btn{
+    width: 10em;
+    height: 3em;
+    /* background-color:rgba(102, 217, 255, 0.8); */
+    border-radius: 10px;
+    outline:dodgerblue;
+    border:transparent;
+    color:tomato;
+    font-size:1em;
+}
+.btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

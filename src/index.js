@@ -6,12 +6,28 @@ import reportWebVitals from './reportWebVitals';
 import MultiText from './MultiText';
 import Number from './Number'
 import Checkbox from './Checkbox';
+import Radio from './Radio';
+import Dropdown from './Dropdown';
+import Multiselect from './Multiselect';
+import Time from './Time';
+import Dates from './Dates';
+import DatesTime from './DatesTime';
+import DecideBox from './DecideBox';
+import Chips from './Chips';
 ReactDOM.render(
   <div>
-    <Text />
+    <Text/>
     <MultiText/>
     <Number/>
-    <Checkbox/>
+    <Checkbox/><br/><br/><br/><br/>
+    <Radio/>
+    <Dropdown/>
+    <Multiselect/>
+    <Time/>
+    <Dates/>
+    <DatesTime/>
+    <DecideBox/>
+    <Chips/>
   </div>,
  
   document.getElementById('root')

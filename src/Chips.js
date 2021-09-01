@@ -1,10 +1,11 @@
 import React from 'react';
-
+import './chips.css';
+import img from'./person.png';
 const Chips = ()=> {
     return(
         <div className="chip">
-            <img src="img_avatar.jpg" alt="Person" width="96" height="96"/>
-            John Doe
+            <img src={img} alt='person' />
+            <label>Hi how are you?</label>
         </div>
     );
 }

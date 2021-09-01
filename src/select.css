@@ -1,0 +1,22 @@
+.sel{
+   display:flex;
+   flex-wrap: wrap;
+   margin-top: 8em;
+   margin-left:8em;
+   width: 30em;
+   padding: 10px;
+   outline: none;
+   border-radius: 5px;
+   color:white;
+   border: 2px solid rgb(94, 125, 212);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: large;
+   font-weight: 200;
+   color:blueviolet;
+   background-color:rgba(128, 128, 128, 0.048);
+}
+.sel:hover{
+    background-color:rgba(171, 205, 243, 0.952); 
+    border: 2px solid rgb(94, 125, 212) transparent; 
+    color: rgba(14, 12, 12, 0.678);
+}
