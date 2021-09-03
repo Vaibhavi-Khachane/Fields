@@ -1,22 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Text from './Text';
+// import Text from './Text';
 import reportWebVitals from './reportWebVitals';
-import MultiText from './MultiText';
-import Number from './Number'
-import Checkbox from './Checkbox';
-import Radio from './Radio';
-import Dropdown from './Dropdown';
-import Multiselect from './Multiselect';
-import Time from './Time';
-import Dates from './Dates';
-import DatesTime from './DatesTime';
-import DecideBox from './DecideBox';
-import Chips from './Chips';
+// import MultiText from './MultiText';
+// import Number from './Number'
+// import Checkbox from './Checkbox';
+// import Radio from './Radio';
+// import Dropdown from './Dropdown';
+// import Multiselect from './Multiselect';
+// import Time from './Time';
+// import Dates from './Dates';
+// import DatesTime from './DatesTime';
+// import DecideBox from './DecideBox';
+// import Chips from './Chips';
+import RichLine from './RichLine';
 ReactDOM.render(
   <div>
-    <Text/>
+    {/* <Text/>
     <MultiText/>
     <Number/>
     <Checkbox/><br/><br/><br/><br/>
@@ -27,7 +28,8 @@ ReactDOM.render(
     <Dates/>
     <DatesTime/>
     <DecideBox/>
-    <Chips/>
+    <Chips/> */}
+    <RichLine/>
   </div>,
  
   document.getElementById('root')
