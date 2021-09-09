@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './field.css';
 import {onBlur, onFocusChange} from './inputAction';
 class Dates extends Component{
+    
     constructor(){
         super();
         this.onBlur = onBlur;
@@ -19,8 +20,18 @@ class Dates extends Component{
     return(
         <div className = "container">
         <div className = "txt">
+
             <label for="Dob">Date of Birth</label>
-            <input type="date" id="Dob" placeholder="Enter Dob" onChange = {this.handleDate} className = "txt1" onFocus = {onFocusChange} onBlur = {onBlur}></input>
+            <input 
+            type="date" 
+            id="Dob" 
+            placeholder="Enter Dob" 
+            onChange = {this.handleDate} 
+            className = "txt1" 
+            onFocus = {onFocusChange} 
+            onBlur = {onBlur} required>
+            </input>
+            
         </div>
         </div>
     );

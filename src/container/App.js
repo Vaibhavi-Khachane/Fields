@@ -22,33 +22,35 @@ class App extends Component {
   constructor(){
     super();
     this.handleSubmit = this.handleSubmit.bind(this);
+    
   }
   handleSubmit(event) {
+
     alert('A data was submitted');
     event.preventDefault();
   }
   render(){
     return(
       <div className = "box">
-      <form onSubmit = {this.handleSubmit} className = "form">
-      <div>
-      <h1 align = "center">Form</h1>
-      <Text/>
-      <MultiText/>
-      <Number/>
-      <Checkbox/><br/><br/><br/><br/>
-      <Radio/>
-      <Dropdown/>
-      <Multiselect/>
-      <Time/>
-      <Dates/>
-      <DatesTime/>
-      {/* <DecideBox/> */}
-      {/* <Chips/> */}
-      <Editor/>
-      <input type = 'submit' className = "btn" style = {{marginLeft:'350px'}}></input>
-      </div>
-    </form>
+        <form onSubmit = {this.handleSubmit} className = "form">
+          <div>
+            <h1 align = "center">Form</h1>
+            <Text/>
+            <MultiText/>
+            <Number/>
+            <Checkbox/><br/><br/><br/><br/>
+            <Radio/>
+            <Dropdown/>
+            <Multiselect/>
+            <Time/>
+            <Dates/>
+            <DatesTime/>
+            {/* <DecideBox/> */}
+            {/* <Chips/> */}
+            <Editor/>
+            <input type = 'submit' className = "btn" style = {{marginLeft:'350px'}}></input>
+          </div>
+      </form>
     </div>
     );
   }  

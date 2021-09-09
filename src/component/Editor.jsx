@@ -6,7 +6,9 @@ import './field.css'
 function Editor(){
     const [text,setText] = useState(''); 
       return(
+        
         <div className = "editor cont1 container">
+        <label>Comment:</label><br/><br/>
           <CKEditor  
           editor = {ClassicEditor}
           data = {text}

@@ -26,8 +26,17 @@ class DatesTime extends Component{
     return(
         <div className = "container">
             <div className = "txt">
+
                 <label for="datetime">Birthday (date and time):</label>
-                <input type="datetime-local" id="datetime" name="datetime" className = "txt1" onChange = {this.handleDateTime} onBlur = {onBlur} onFocus = {onFocusChange}/>
+                <input 
+                type="datetime-local" 
+                id="datetime" 
+                name="datetime" 
+                className = "txt1" 
+                onChange = {this.handleDateTime} 
+                onBlur = {onBlur} 
+                onFocus = {onFocusChange} required/>
+                
             </div>
         </div>
     );

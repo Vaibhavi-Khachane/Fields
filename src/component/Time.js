@@ -22,9 +22,18 @@ class Time extends Component{
     return(
         <div className = "container" style={{marginLeft:"1em"}}>
             <div className = "txt">
+
                 <label for="time">Select a time:</label>
-                <input type="time" id="time" name="time" className = "txt1"  onChange = {this.handelTime} onFocus = {onFocusChange} onBlur = {onBlur}></input>
+                <input 
+                type="time" 
+                id="time" 
+                name="time" 
+                className = "txt1"  
+                onChange = {this.handelTime} 
+                onFocus = {onFocusChange} 
+                onBlur = {onBlur} required></input>
             </div>
+            
         </div>
     );
 }

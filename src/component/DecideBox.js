@@ -18,8 +18,19 @@ render(){
             <div className = "txt1 con1">
             <img src = {img} alt = "alert" style = {{maxWidth: '25%', maxHeight : '25%'}}/><label>Do you want to Logout?</label><br/><br/>
                     <div className = "inside">
-                        <input type = "button" value="Yes" className = "btn" onFocus = {this.onFocusChange} onBlur = {this.onBlur}></input>
-                        <input type = "button" value="No" className = "btn"></input>
+
+                        <input 
+                        type = "button" 
+                        value="Yes" 
+                        className = "btn" 
+                        onFocus = {this.onFocusChange} 
+                        onBlur = {this.onBlur}></input>
+
+                        <input 
+                        type = "button" 
+                        value="No" 
+                        className = "btn"></input>
+                        
                     </div>
             </div>
         </div>

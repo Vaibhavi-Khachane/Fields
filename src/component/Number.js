@@ -6,14 +6,21 @@ class Number extends Component {
     constructor(){
         super();
         this.state = {
-          value : ''
+          value : '',
+          err : false
         }
         this.onBlur = onBlur;
         this.onFocusChange = onFocusChange;
         this.handelInput = this.handelInput.bind(this);
       }
       handelInput(event) {
-        this.setState({value: event.target.value});
+        let num = event.target.value;
+        if(!num.match(/^100|[1-9]?\d$/)){
+          this.setState({err : true})
+        }else{
+          this.setState({err:false});
+          this.setState({value:num});
+        }
       }
 
     
@@ -22,8 +29,18 @@ class Number extends Component {
     return(
         <div className = "container">
             <div className="txt">
-                <label htmlFor= "number">Number</label>
-                <input type = "number" placeholder="Enter Number" id="number" className="txt1" onChange = {this.handelInput} value = {this.state.value} onBlur = {onBlur} onFocus = {onFocusChange}></input>
+                <label htmlFor= "number">Age</label>
+                <input 
+                type = "number" 
+                placeholder="Enter Number" 
+                id="number" 
+                className="txt1" 
+                onChange = {this.handelInput} 
+                value = {this.state.value} 
+                onBlur = {onBlur} 
+                onFocus = {onFocusChange} required>
+                </input>
+                {this.state.err ? <span style={{color: "red"}}>Invalid input! it should be number</span>  : ""}
             </div>
         </div>
     );

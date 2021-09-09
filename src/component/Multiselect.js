@@ -19,11 +19,11 @@ class Multiselect extends Component{
     render(){
         return(
             <div>
-            <select multiple className='sel' style = {{marginTop: "2em"}} value = {this.state.value} onChange = {this.handelInput} onBlur = {onBlur} onFocus = {onFocusChange}>
+            <select multiple className='sel' style = {{marginTop: "2em"}} onChange = {this.handelInput} onBlur = {onBlur} onFocus = {onFocusChange} required>
                 <option selected>Select Hobby</option>
-                <option value="01">Playing</option>
-                <option value="02">Reading</option>
-                <option value="03">Drawing</option>
+                <option value="Playing">Playing</option>
+                <option value="Reading">Reading</option>
+                <option value="Drawing">Drawing</option>
             </select>
         </div>
         );
