@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import './field.css';
+import {onBlur, onFocusChange} from './inputAction';
 class DatesTime extends Component{
 
     constructor(){
         super();
+        this.onBlur = onBlur;
+        this.onFocusChange = onFocusChange;
         this.handleDateTime = this.handleDateTime.bind(this);
         this.state = {
            dateTime : ''
@@ -24,7 +27,7 @@ class DatesTime extends Component{
         <div className = "container">
             <div className = "txt">
                 <label for="datetime">Birthday (date and time):</label>
-                <input type="datetime-local" id="datetime" name="datetime" className = "txt1" onChange = {this.handleDateTime} onBlur = {this.onBlur} onFocus = {this.onFocusChange}/>
+                <input type="datetime-local" id="datetime" name="datetime" className = "txt1" onChange = {this.handleDateTime} onBlur = {onBlur} onFocus = {onFocusChange}/>
             </div>
         </div>
     );

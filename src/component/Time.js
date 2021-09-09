@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import './field.css'
+import {onBlur, onFocusChange} from './inputAction';
 class Time extends Component{
     constructor(){
         super();
+
         this.handelTime = this.handelTime.bind(this);
+        this.onFocusChange = onFocusChange;
+        this.onBlur = onBlur;
+        
         this.state = {
            time : ''
         }
@@ -12,19 +17,13 @@ class Time extends Component{
         this.setState({time:event.target.value});
     }
     
-    onFocusChange =  (event) => {
-        event.target.style.borderColor =   '#0f0'
-     }
-     
-     onBlur = (event) =>{
-       event.target.style.borderColor = '#5e7dd4'
-     }
+    
     render(){
     return(
         <div className = "container" style={{marginLeft:"1em"}}>
             <div className = "txt">
                 <label for="time">Select a time:</label>
-                <input type="time" id="time" name="time" className = "txt1"  onChange = {this.handelTime} onFocus = {this.onFocusChange} onBlur = {this.onBlur}></input>
+                <input type="time" id="time" name="time" className = "txt1"  onChange = {this.handelTime} onFocus = {onFocusChange} onBlur = {onBlur}></input>
             </div>
         </div>
     );
