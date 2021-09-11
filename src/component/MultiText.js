@@ -28,7 +28,7 @@ class MultiText extends Component{
         return(
             <div className="container">
             <div className="txt">
-                <label for="address">Address</label>
+                <label htmlFor="address">Address</label>
                 <textarea 
                   rows = "4" 
                   cols = "50" 

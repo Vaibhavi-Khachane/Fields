@@ -20,10 +20,10 @@ class Dropdown extends Component{
     return(
         <div>
             <select className = 'sel' onChange = {this.handelInput} onFocus = {onFocusChange} onBlur = {onBlur} required>
-                <option defaultChecked = {this.state.value}>Select country</option>
-                <option value="1">India</option>
-                <option value="2">USA</option>
-                <option value="3">UK</option>
+                <option value = {this.state.value}>Select country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
             </select>
         </div>
     );

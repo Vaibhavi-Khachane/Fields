@@ -21,7 +21,7 @@ class Dates extends Component{
         <div className = "container">
         <div className = "txt">
 
-            <label for="Dob">Date of Birth</label>
+            <label htmlFor="Dob">Date of Birth</label>
             <input 
             type="date" 
             id="Dob" 

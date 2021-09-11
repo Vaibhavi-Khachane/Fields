@@ -27,7 +27,7 @@ class DatesTime extends Component{
         <div className = "container">
             <div className = "txt">
 
-                <label for="datetime">Birthday (date and time):</label>
+                <label htmlFor="datetime">Birthday (date and time):</label>
                 <input 
                 type="datetime-local" 
                 id="datetime" 

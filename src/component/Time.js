@@ -23,7 +23,7 @@ class Time extends Component{
         <div className = "container" style={{marginLeft:"1em"}}>
             <div className = "txt">
 
-                <label for="time">Select a time:</label>
+                <label htmlFor="time">Select a time:</label>
                 <input 
                 type="time" 
                 id="time" 

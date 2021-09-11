@@ -33,7 +33,7 @@ class Text extends Component{
         return(
         <div className="container">
             <div className="txt">
-                <label for= "txt1">Enter Name:</label>
+                <label htmlFor= "txt1">Enter Name:</label>
                 <input 
                 type = "text" 
                 placeholder="Enter Name" 
